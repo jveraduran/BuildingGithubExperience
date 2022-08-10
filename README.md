@@ -40,8 +40,38 @@ https://dzone.com/articles/source-code-asset-not
 ## Complement your experience with your own products
 
 + Actions Marketplace
-+ NPM: https://docs.github.com/es/packages/working-with-a-github-packages-registry/working-with-the-npm-registry
-+ Container Base Line: https://docs.github.com/es/actions/publishing-packages/publishing-docker-images
+
+### Github NPM Registry
+A package is a file or directory that is described by a package.json file. A package must contain a package.json file in order to be published to the npm registry. For more information on creating a package.json file, see "Creating a package.json file".
+
+Packages can be unscoped or scoped to a user or organization, and scoped packages can be private or public
+
+**¿Why use a Private Registry?**
+
++ **Central hub for all your required package versions:** Private and public together, possibly from multiple upstream sources.
+  
++ **Identification and visualization of dependencies:** With all required packages in one place it enables identification of potential issues. Additionally the proxy caches your packages, removing the worry that an essential package version will be unpublished in the future.
+  
++ **Single package source:** With all developers using the same registry that contains the same versions, you can ensure all users build and test consistently. Removing the potential issue of unknowingly using different versions of a dependency.
+
+This is a [Github Repository](https://github.com/jveraduran/github-npm-registry-be) with a Back-End Example about using [Github NPM Registry](https://docs.github.com/es/packages/working-with-a-github-packages-registry/working-with-the-npm-registry)
+
+
+### Github Container Registry
+Container image registries can offer significant advantages for developers but with one caveat attached: not all registries are created equally.
+
+Public registry services are basic, simple to use and can work well for individuals and smaller teams. But once teams begin to scale up, they run into numerous issues with public registries. A private container registry with scanning capabilities and role-based access control offers more security, governance and efficient management
+
+**¿Why Use a Container Image Registry?**
+
+The registry remains a source of truth for the images you want to run. The first advantage is you have the same piece of code running everywhere. The second advantage is that piece of code is guarded in a repository controlled by IT so you can easily revert to a clean environment. The result is the end of “config drift” in production
+
+**¿What is Github Container Registry?**
+
+The [Container registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry) stores container images within your organization or personal account, and allows you to associate an image with a repository. You can choose whether to inherit permissions from a repository, or set granular permissions independently of a repository. You can also access public container images anonymously.
+
+This is a [Github Repository](https://github.com/jveraduran/container-registry) example about using [Github Container Registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry)
+
 + Infrastructure Modules
 + Ansible Roles
 + Re-usable workflows

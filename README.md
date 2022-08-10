@@ -41,7 +41,21 @@ https://dzone.com/articles/source-code-asset-not
 
 + Actions Marketplace
 + NPM
-+ Container Base Line
+### Github Container Registry
+Container image registries can offer significant advantages for developers but with one caveat attached: not all registries are created equally.
+
+Public registry services are basic, simple to use and can work well for individuals and smaller teams. But once teams begin to scale up, they run into numerous issues with public registries. A private container registry with scanning capabilities and role-based access control offers more security, governance and efficient management
+
+**¿Why Use a Container Image Registry?**
+
+The registry remains a source of truth for the images you want to run. The first advantage is you have the same piece of code running everywhere. The second advantage is that piece of code is guarded in a repository controlled by IT so you can easily revert to a clean environment. The result is the end of “config drift” in production
+
+**¿What is Github Container Registry?**
+
+The [Container registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry) stores container images within your organization or personal account, and allows you to associate an image with a repository. You can choose whether to inherit permissions from a repository, or set granular permissions independently of a repository. You can also access public container images anonymously.
+
+This is a [Github Repository](https://github.com/jveraduran/container-registry) example about using [Github Container Registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry)
+
 + Infrastructure Modules
 + Ansible Roles
 + Re-usable workflows

@@ -41,55 +41,21 @@ https://dzone.com/articles/source-code-asset-not
 
 + Actions Marketplace
 + NPM
-### Github Docker Registry
+### Github Container Registry
+Container image registries can offer significant advantages for developers but with one caveat attached: not all registries are created equally.
 
-This is [Github Action](https://github.com/jveraduran/container-registry) example about using [Github Docker Registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry)
-```
-name: Create and publish a Docker image
+Public registry services are basic, simple to use and can work well for individuals and smaller teams. But once teams begin to scale up, they run into numerous issues with public registries. A private container registry with scanning capabilities and role-based access control offers more security, governance and efficient management
 
-on:
-  release:
-    types: [published]
+**¿Why Use a Container Image Registry?**
 
-env:
-  REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}
+The registry remains a source of truth for the images you want to run. The first advantage is you have the same piece of code running everywhere. The second advantage is that piece of code is guarded in a repository controlled by IT so you can easily revert to a clean environment. The result is the end of “config drift” in production
 
-jobs:
-  build-and-push-image:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
+**¿What is Github Container Registry?**
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+The [Container registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry) stores container images within your organization or personal account, and allows you to associate an image with a repository. You can choose whether to inherit permissions from a repository, or set granular permissions independently of a repository. You can also access public container images anonymously.
 
-      - name: Log in to the Container registry
-        uses: docker/login-action@f054a8b539a109f9f41c372932f1ae047eff08c9
-        with:
-          registry: ${{ env.REGISTRY }}
-          username: ${{ github.actor }}
-          password: ${{ secrets.PAT_GITHUB_TOKEN }}
+This is a [Github Repository](https://github.com/jveraduran/container-registry) example about using [Github Container Registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry)
 
-      - name: Extract metadata (tags, labels) for Docker
-        id: meta
-        uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
-        with:
-          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
-
-      - name: Build and push Docker image
-        uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
-        with:
-          context: .
-          push: true
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
-```
-https://docs.github.com/en/actions/security-guides/encrypted-secrets
-https://docs.github.com/es/actions/using-workflows/events-that-trigger-workflows#release
-https://docs.github.com/es/actions/publishing-packages/publishing-docker-images
 + Infrastructure Modules
 + Ansible Roles
 + Re-usable workflows

@@ -40,7 +40,23 @@ https://dzone.com/articles/source-code-asset-not
 ## Complement your experience with your own products
 
 + Actions Marketplace
-+ NPM
+
+### Github NPM Registry
+A package is a file or directory that is described by a package.json file. A package must contain a package.json file in order to be published to the npm registry. For more information on creating a package.json file, see "Creating a package.json file".
+
+Packages can be unscoped or scoped to a user or organization, and scoped packages can be private or public
+
+**¿Why use a Private Registry?**
+
++ **Central hub for all your required package versions:** Private and public together, possibly from multiple upstream sources.
+  
++ **Identification and visualization of dependencies:** With all required packages in one place it enables identification of potential issues. Additionally the proxy caches your packages, removing the worry that an essential package version will be unpublished in the future.
+  
++ **Single package source:** With all developers using the same registry that contains the same versions, you can ensure all users build and test consistently. Removing the potential issue of unknowingly using different versions of a dependency.
+
+This is a [Github Repository](https://github.com/jveraduran/github-npm-registry-be) with a Back-End Example about using [Github NPM Registry](https://docs.github.com/es/packages/working-with-a-github-packages-registry/working-with-the-npm-registry)
+
+
 ### Github Container Registry
 Container image registries can offer significant advantages for developers but with one caveat attached: not all registries are created equally.
 

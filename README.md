@@ -56,6 +56,12 @@ Packages can be unscoped or scoped to a user or organization, and scoped package
 
 This is a [Github Repository](https://github.com/jveraduran/github-npm-registry-be) with a Back-End Example about using [Github NPM Registry](https://docs.github.com/es/packages/working-with-a-github-packages-registry/working-with-the-npm-registry)
 
+<p align="left" style="text-align:left;">
+  <a href="https://github.com/features/packages">
+    <img alt="Github Packages" src="img/packages-benefits.png" width="1040"/>
+  </a>
+</p>
+
 
 ### Github Container Registry
 Container image registries can offer significant advantages for developers but with one caveat attached: not all registries are created equally.
@@ -71,6 +77,12 @@ The registry remains a source of truth for the images you want to run. The first
 The [Container registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry) stores container images within your organization or personal account, and allows you to associate an image with a repository. You can choose whether to inherit permissions from a repository, or set granular permissions independently of a repository. You can also access public container images anonymously.
 
 This is a [Github Repository](https://github.com/jveraduran/container-registry) example about using [Github Container Registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry)
+
+<p align="left" style="text-align:left;">
+  <a href="https://github.com/features/packages">
+    <img alt="Github Packages" src="img/packages-benefits.png" width="1040"/>
+  </a>
+</p>
 
 + Infrastructure Modules
 + Ansible Roles

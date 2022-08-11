@@ -77,7 +77,11 @@ Reusing workflows avoids duplication. This makes workflows easier to maintain an
 
 The diagram below shows three build jobs on the left of the diagram. After each of these jobs completes successfully a dependent job called "Deploy" runs. This job calls a reusable workflow that contains three jobs: "Staging", "Review", and "Production." The "Production" deployment job only runs after the "Staging" job has completed successfully. Using a reusable workflow to run deployment jobs allows you to run those jobs for each build without duplicating code in workflows.
 
-Diagram of a reusable workflow for deployment
+<p align="left" style="text-align:left;">
+  <a href="https://docs.github.com/en/actions/using-workflows/reusing-workflows">
+    <img alt="Github Reusable Workflows" src="img/reusable-workflows-ci-cd.png" width="1040"/>
+  </a>
+</p>
 
 A workflow that uses another workflow is referred to as a "caller" workflow. The reusable workflow is a "called" workflow. One caller workflow can use multiple called workflows. Each called workflow is referenced in a single line. The result is that the caller workflow file may contain just a few lines of YAML, but may perform a large number of tasks when it's run. When you reuse a workflow, the entire called workflow is used, just as if it was part of the caller workflow.
 

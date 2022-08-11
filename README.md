@@ -69,6 +69,52 @@ GitHub provides Linux, Windows, and macOS virtual machines to run your workflows
 
 [GitHub Marketplace](https://github.com/marketplace) connects you to developers who want to extend and improve their GitHub workflows. You can list free and paid tools for developers to use in GitHub Marketplace. GitHub Marketplace offers developers two types of tools: GitHub Actions and Apps, and each tool requires different steps for adding it to [GitHub Marketplace](https://github.com/marketplace).
 
+This is an [example of contribution](https://github.com/marketplace/actions/packer-github-actions-with-ansible-provisioner) on 
+[GitHub Marketplace](https://github.com/marketplace) with an Action that runs [Hashicorp Packer](https://www.packer.io) ```commands```, you can use it on your workflows
+
+```
+name: Packer
+
+on:
+  push:
+
+jobs:
+  packer:
+    runs-on: ubuntu-latest
+    name: packer
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Fix Template
+        uses: jveraduran/packer-github-actions@master
+        with:
+          command: fix
+
+      - name: Validate Template
+        uses: jveraduran/packer-github-actions@master
+        with:
+          command: validate
+          arguments: -syntax-only
+          target: packer.pkr.hcl
+
+      - name: Build Artifact
+        uses: jveraduran/packer-github-actions@master
+        with:
+          command: build
+          arguments: "-color=false -on-error=abort"
+          target: packer.pkr.hcl
+          working_directory: infrastructure/packer
+        env:
+          PACKER_LOG: 1
+          HCP_CLIENT_ID: ${{ secrets.HCP_CLIENT_ID }}
+          HCP_CLIENT_SECRET: ${{ secrets.HCP_CLIENT_SECRET }}
+```
+<br>
+
+If you want to [create and publish your own Action](https://docs.github.com/en/actions/creating-actions/publishing-actions-in-github-marketplace), please consider this [security tips](https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions?learn=getting_started&learnProduct=actions) from Github.
+
 ### Github Reusable Workflows
 
 Rather than copying and pasting from one workflow to another, you can make workflows reusable. You and anyone with access to the reusable workflow can then call the reusable workflow from another workflow.

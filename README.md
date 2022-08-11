@@ -18,9 +18,9 @@ The ***software is a liability*** argument seems to be that it’s not the softw
 
 Pretending that software has no value in itself is silly. Try explaining this to accountants (don’t depreciate the airplane, depreciate the ability to fly!) and IP lawyers and to investors who buy software companies for their IP. They all understand that software and the ideas embodied in it are valuable and need to be treated as assets. The ideas themselves are only worth so much, even if they’re patented. But the ideas realized in software, actualized and proven and ready to be used or (better) already being used – that’s where the real value is. And this is the value that needs to be maintained and preserved.
 
-**Github** enable the tools that you need to build that you want, enabling to you and your organizations the capabilities to ***Contribute to projects quiclky with automatic environment setup***, making visibility about ***the changes you care about***, and finally, but not less important, ***building community aroun your code***
+[**Github**](https://github.com/features) enable the tools that you need to build that you want, enabling to you and your organizations the capabilities to ***Contribute to projects quiclky with automatic environment setup***, making visibility about ***the changes you care about***, and finally, but not less important, ***building community aroun your code***
 
-In the next chapters, we'll share a way to work with a big part of **Github** features, and how you can bring to your developers teams, and excellent and reliability experience, guaranting keep your asset **secure** and **updated**.
+In the next chapters, we'll share a way to work with a big part of [**Github**](https://github.com/features) features, and how you can bring to your developers teams, and excellent and reliability experience, guaranting keep your asset **secure** and **updated**.
 
 <br>
 

@@ -12,7 +12,17 @@ GitHub with GitHubActions and GHAS offer an incredible experience for developers
 
 ## Code as a company asset
 
-https://dzone.com/articles/source-code-asset-not
+If you build and operate a power plant or a bridge, you have to maintain it – just like software. And like a bridge or a power plant, a newer, more modern, better-designed, more efficient and simpler asset is better than a big, old, complicated, expensive-to-maintain one.
+
+The ***software is a liability*** argument seems to be that it’s not the software that’s the asset, it’s the “features and options” – the capabilities that the software provides. This is like saying that it’s not the power plant (which a company spent millions of dollars to design and engineer) that’s a valuable asset to a company, it’s the energy that it generates. It’s not the bridge – it’s the ability to drive over water. It’s not the airplane, it’s the ability to fly.
+
+Pretending that software has no value in itself is silly. Try explaining this to accountants (don’t depreciate the airplane, depreciate the ability to fly!) and IP lawyers and to investors who buy software companies for their IP. They all understand that software and the ideas embodied in it are valuable and need to be treated as assets. The ideas themselves are only worth so much, even if they’re patented. But the ideas realized in software, actualized and proven and ready to be used or (better) already being used – that’s where the real value is. And this is the value that needs to be maintained and preserved.
+
+**Github** enable the tools that you need to build that you want, enabling to you and your organizations the capabilities to ***Contribute to projects quiclky with automatic environment setup***, making visibility about ***the changes you care about***, and finally, but not less important, ***building community aroun your code***
+
+In the next chapters, we'll share a way to work with a big part of **Github** features, and how you can bring to your developers teams, and excellent and reliability experience, guaranting keep your asset **secure** and **updated**.
+
+<br>
 
 ## Coexistence Agreements
 

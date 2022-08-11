@@ -63,6 +63,8 @@ GitHub provides Linux, Windows, and macOS virtual machines to run your workflows
   </a>
 </p>
 
+You can find a lot of actions examples in community resources like [awesome actions](https://github.com/sdras/awesome-actions) with Multi-Platform and Multi-Proposit examples.
+
 <br>
 
 ### Github MarketPlace

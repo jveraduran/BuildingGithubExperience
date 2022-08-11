@@ -49,7 +49,49 @@ In the next chapters, we'll share a way to work with a big part of [**Github**](
 
 ## Complement your experience with your own products
 
-+ Actions Marketplace
+### Github Actions
+
+[GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions) is a continuous integration and continuous delivery (CI/CD) platform that allows you to automate your build, test, and deployment pipeline. You can create workflows that build and test every pull request to your repository, or deploy merged pull requests to production.
+
+[GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions) goes beyond just DevOps and lets you run workflows when other events happen in your repository. For example, you can run a workflow to automatically add the appropriate labels whenever someone creates a new issue in your repository.
+
+GitHub provides Linux, Windows, and macOS virtual machines to run your workflows, or you can host your own self-hosted runners in your own data center or cloud infrastructure.
+
+<p align="left" style="text-align:left;">
+  <a href="https://github.com/features/actions">
+    <img alt="Github Actions" src="img/action-workflow.svg" width="1040"/>
+  </a>
+</p>
+
+<br>
+
+### Github MarketPlace
+
+[GitHub Marketplace](https://github.com/marketplace) connects you to developers who want to extend and improve their GitHub workflows. You can list free and paid tools for developers to use in GitHub Marketplace. GitHub Marketplace offers developers two types of tools: GitHub Actions and Apps, and each tool requires different steps for adding it to [GitHub Marketplace](https://github.com/marketplace).
+
+### Github Reusable Workflows
+
+Rather than copying and pasting from one workflow to another, you can make workflows reusable. You and anyone with access to the reusable workflow can then call the reusable workflow from another workflow.
+
+Reusing workflows avoids duplication. This makes workflows easier to maintain and allows you to create new workflows more quickly by building on the work of others, just as you do with actions. Workflow reuse also promotes best practice by helping you to use workflows that are well designed, have already been tested, and have been proved to be effective. Your organization can build up a library of reusable workflows that can be centrally maintained.
+
+The diagram below shows three build jobs on the left of the diagram. After each of these jobs completes successfully a dependent job called "Deploy" runs. This job calls a reusable workflow that contains three jobs: "Staging", "Review", and "Production." The "Production" deployment job only runs after the "Staging" job has completed successfully. Using a reusable workflow to run deployment jobs allows you to run those jobs for each build without duplicating code in workflows.
+
+<p align="left" style="text-align:left;">
+  <a href="https://docs.github.com/en/actions/using-workflows/reusing-workflows">
+    <img alt="Github Reusable Workflows" src="img/reusable-workflows-ci-cd.png" width="1040"/>
+  </a>
+</p>
+
+A workflow that uses another workflow is referred to as a "caller" workflow. The reusable workflow is a "called" workflow. One caller workflow can use multiple called workflows. Each called workflow is referenced in a single line. The result is that the caller workflow file may contain just a few lines of YAML, but may perform a large number of tasks when it's run. When you reuse a workflow, the entire called workflow is used, just as if it was part of the caller workflow.
+
+If you reuse a workflow from a different repository, any actions in the called workflow run as if they were part of the caller workflow. For example, if the called workflow uses ```actions/checkout```, the action checks out the contents of the repository that hosts the caller workflow, not the called workflow.
+
+When a reusable workflow is triggered by a caller workflow, the ```github``` context is always associated with the caller workflow. The called workflow is automatically granted access to ```github.token``` and ```secrets.GITHUB_TOKEN```. For more information about the ```github context```, see ["Context and expression syntax for GitHub Actions](https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#github-context)."
+
+You can view the reused workflows referenced in your GitHub Actions workflows as dependencies in the dependency graph of the repository containing your workflows. For more information, see “[About the dependency graph](https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-the-dependency-graph).”
+
+<br>
 
 ### Github NPM Registry
 GitHub Packages is a software package hosting service provided by GitHub that allows you to host your software packages such as npm, docker, gem, dotnet, mvn, gradle in privately or publicly and use packages as dependencies in your projects.
@@ -112,7 +154,6 @@ This is a [Github Repository](https://github.com/jveraduran/container-registry) 
 
 + Infrastructure Modules
 + Ansible Roles
-+ Re-usable workflows
 
 ## Creating secure code at the beginning
 

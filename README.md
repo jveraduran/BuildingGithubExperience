@@ -42,6 +42,10 @@ https://dzone.com/articles/source-code-asset-not
 + Actions Marketplace
 
 ### Github NPM Registry
+GitHub Packages is a software package hosting service provided by GitHub that allows you to host your software packages such as npm, docker, gem, dotnet, mvn, gradle in privately or publicly and use packages as dependencies in your projects.
+
+You can integrate GitHub Packages with GitHub APIs, GitHub Actions, and webhooks to create an end-to-end DevOps workflow that includes your code, CI, and deployment solutions.
+
 A package is a file or directory that is described by a package.json file. A package must contain a package.json file in order to be published to the npm registry. For more information on creating a package.json file, see "Creating a package.json file".
 
 Packages can be unscoped or scoped to a user or organization, and scoped packages can be private or public
@@ -67,6 +71,11 @@ This is a [Github Repository](https://github.com/jveraduran/github-npm-registry-
 <br>
 
 ### Github Container Registry
+
+GitHub Packages is a software package hosting service provided by GitHub that allows you to host your software packages such as npm, docker, gem, dotnet, mvn, gradle in privately or publicly and use packages as dependencies in your projects.
+
+You can integrate GitHub Packages with GitHub APIs, GitHub Actions, and webhooks to create an end-to-end DevOps workflow that includes your code, CI, and deployment solutions.
+
 Container image registries can offer significant advantages for developers but with one caveat attached: not all registries are created equally.
 
 Public registry services are basic, simple to use and can work well for individuals and smaller teams. But once teams begin to scale up, they run into numerous issues with public registries. A private container registry with scanning capabilities and role-based access control offers more security, governance and efficient management

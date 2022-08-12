@@ -26,7 +26,8 @@ In the next chapters, we'll share a way to work with a big part of [**Github**](
 
 ## Coexistence Agreements
 
-### Owner Accountability
+### Owner Accountability
+
 #### Organization Teams
 
 [Teams](https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams) are groups of organization members that reflect your company or group's structure with cascading access permissions and mentions.
@@ -54,7 +55,7 @@ A [repository](https://docs.github.com/en/enterprise-cloud@latest/repositories) 
 
 #### Organization Encrypted Secrets
 
-### Development Teams Accountability
+### Development Teams Accountability
 
 [create a new repository](https://docs.github.com/en/enterprise-cloud@latest/repositories/creating-and-managing-repositories/creating-a-new-repository)
 [create a new repository from template](https://docs.github.com/en/enterprise-cloud@latest/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)

@@ -26,18 +26,42 @@ In the next chapters, we'll share a way to work with a big part of [**Github**](
 
 ## Coexistence Agreements
 
-**Owner Accountability**
-+ Teams: Teams + Member Roles, Custome Roles
-+ Teams Discussion
-+ Repository: Labels, Roles, Topics, Member Privileges
-+ Github Actions Workflows - General Topics
-+ Organization Secrets
+### Owner Accountability
+#### Organization Teams
 
-**Development Teams Accountability**
+[Teams](https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams) are groups of organization members that reflect your company or group's structure with cascading access permissions and mentions.
 
-+ Templates
-+ Branches + Protection Rules
-+ Github Actions - Particular Topics
+If you have the role of Organization Owners or Team Maintainers can give teams admin, read, or write access to organization repositories.
+
+You can define a lot ot diferents permisions (Defining [Team Mantainers](https://docs.github.com/en/organizations/organizing-members-into-teams/assigning-the-team-maintainer-role-to-a-team-member),[Defining Other Roles](https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization)), Including [Child Teams](https://docs.github.com/en/organizations/organizing-members-into-teams/requesting-to-add-a-child-team), or enable communications cross channels([Enable Code Review Settings](https://docs.github.com/en/organizations/organizing-members-into-teams/managing-code-review-settings-for-your-team), [Enable Team Discussions](https://docs.github.com/en/organizations/collaborating-with-your-team/about-team-discussions)), but the most important, **you must define this of the begining**, to simplify the way that developers do his job, to promote that your teams "**stay focus on development**".
+
+#### Organization Repositories
+
+A [repository](https://docs.github.com/en/enterprise-cloud@latest/repositories) contains all of your project's files and each file's revision history. You can discuss and manage your project's work within the repository.
+[repository visibility](https://docs.github.com/en/enterprise-cloud@latest/repositories/creating-and-managing-repositories/about-repositories#about-repository-visibility)
+[create a new repository](https://docs.github.com/en/enterprise-cloud@latest/repositories/creating-and-managing-repositories/creating-a-new-repository)
+[create a new repository from template](https://docs.github.com/en/enterprise-cloud@latest/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
+[manage repository with topics](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics)
+[including readme](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes)
+[including licence](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository)
+[repository roles](https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/repository-roles-for-an-organization)
+[manage team access](https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/managing-team-access-to-an-organization-repository)
+[manage individual access](https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/managing-an-individuals-access-to-an-organization-repository)
+[setting base permissions](https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/setting-base-permissions-for-an-organization)
+[repository labels](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels)
+
+#### Deliver Github Actions as a Service
+
+#### Organization Encrypted Secrets
+
+### Development Teams Accountability
+
+[create a new repository](https://docs.github.com/en/enterprise-cloud@latest/repositories/creating-and-managing-repositories/creating-a-new-repository)
+[create a new repository from template](https://docs.github.com/en/enterprise-cloud@latest/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
+[manage branches](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-branches-in-your-repository/viewing-branches-in-your-repository)
+[branch protection rules](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule)
+
+#### Consuming Github Actions Service
 
 ## Developers diversity with an unique experience
 
